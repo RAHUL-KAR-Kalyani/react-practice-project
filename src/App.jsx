@@ -13,10 +13,13 @@ import RandomQuote from './RandomQuote'
 import UploadImage from './UploadImage'
 import LogIn from './LogIn'
 import Registration from './Registration'
+import Weatherapp from './Weatherapp'
+import SearchItems from './SearchItems'
 
 function App() {
+	const items=['Items 1','Item 2','Item 3','Another Item','Another Item 2']
 	return (
-		<div>
+		<div>			
 			<Helloworld/>
 			<hr />
 			<Counter/>
@@ -28,7 +31,7 @@ function App() {
 			<ToggleSwitch/>
 			<hr />
 			<FetchData/>
-			<hr />
+			{/* <hr /> */}
 			<Timer/>
 			<hr />
 			<BackgroundChange/>
@@ -41,6 +44,9 @@ function App() {
 			<hr />
 			<LogIn/>
 			<hr />
+			<Weatherapp />
+			<hr />
+			<SearchItems items={items}/>
 		</div>
 	)
 }
